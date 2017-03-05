@@ -1,0 +1,45 @@
+ul,li {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+#imgList{
+    width:700px;
+    overflow:hidden;
+    zoom:1;
+    border:1px solid #333;
+    margin:0 auto;
+    padding:0 0 10px 10px;
+}
+
+#imgList li{
+    float:left;
+    width:128px;
+    height:128px;
+    border:1px solid #ccc;
+    margin:10px 10px 0 0;
+}
+
+#imgList li img{
+    float:left;
+    width: 100px;
+    height: 100px;
+    opacity:0.3;
+    cursor:crosshair;
+    filter:alpha(opacity=30);
+    /*为了IE浏览器实现不透明度为80%    因为如果用   opacity:0.8;   IE会不支持的*/
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#imgList li.current img{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+
+.current2 {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
